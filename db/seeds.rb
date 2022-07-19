@@ -11,12 +11,12 @@ Platform.destroy_all
 Genre.destroy_all
 Game.destroy_all
 
-User.find_or_create_by(username: "user_test") do |user|
-  user.email = "user@test.com"
-  user.birth_date = "1990-01-01"
-  user.first_name = "User"
-  user.last_name = "Test"
-end
+# User.find_or_create_by(username: "user_test") do |user|
+#   user.email = "user@test.com"
+#   user.birth_date = "1990-01-01"
+#   user.first_name = "User"
+#   user.last_name = "Test"
+# end
 
 puts "Seeding companies"
 companies_data.each do |company_data|
